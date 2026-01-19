@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+*{
+  box-sizing: border-box;
+}
+
+                                /* Marquee Animation */
+
+.marquee {
+  overflow: hidden;
+  width: 100vw; /* full browser width */
+}
+
+.marquee-track {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(120%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+.carousal{
+  animation: carousal 1.5s ease-in-out 1;
+  transform: scaleX(0%);
+}
+
+@keyframes carousal{
+  0%{
+    transform: scaleX(0%);
+  }
+  60%{
+    transform: scaleX(200%);
+  }
+  100%{
+    transform: scaleX(0%);
+  }
+
+}
+
+
