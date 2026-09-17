@@ -32,22 +32,31 @@
 
 
 
-.carousal{
-  animation: carousal 1.5s ease-in-out 1;
-  transform: scaleX(0%);
+.carousalIn{
+  animation: carousalIn 1.5s ease-in-out 1;
+  transform: translateX(-100%);
 }
 
-@keyframes carousal{
-  0%{
-    transform: scaleX(0%);
+@keyframes carousalIn{
+ from{
+    transform: translateX(0%);
   }
-  60%{
-    transform: scaleX(200%);
+  to{
+    transform: translateX(-100%);
   }
-  100%{
-    transform: scaleX(0%);
-  }
-
 }
 
 
+.carousalOut{
+  animation: carousalOut 1.5s ease-in-out 1;
+  transform: translateX(-100%);
+}
+
+@keyframes carousalOut{
+ from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}

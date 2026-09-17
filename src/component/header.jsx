@@ -88,7 +88,7 @@ ${nav?'translate-y-0':'-translate-y-full'}`}>
 <div className="">
   <button onClick={() => dropdown("menu1")} className="flex items-center gap-2">
     <span className="font-semibold text-2xl lg:text-5xl cursor-pointer">Men</span>
-    <span className="md:hidden ml-2 bg-gray-900 py-1 px-2 rounded-full">
+    <span className="md:hidden py-1 rounded-full">
     <i
       className={`fa-solid fa-chevron-down transition text-sm 
       ${show.menu1 ? "rotate-180" : ""}`}
@@ -111,13 +111,14 @@ ${nav?'translate-y-0':'-translate-y-full'}`}>
 <div className="">
   <button onClick={() => dropdown("menu2")} className="flex items-center gap-2">
     <span className="font-semibold text-2xl lg:text-5xl cursor-pointer">Women</span>
-    <span className="md:hidden ml-2 bg-gray-900 py-1 px-2 rounded-full">
+    <span className="md:hidden py-1 rounded-full">
      <i
       className={`fa-solid fa-chevron-down transition  text-sm
       ${show.menu2 ? "rotate-180" : ""}`}
     /> 
     </span>
     
+
   </button>
 
   {show.menu2 && (
@@ -134,7 +135,7 @@ ${nav?'translate-y-0':'-translate-y-full'}`}>
 <div className="">
   <button onClick={() => dropdown("menu3")} className="flex items-center gap-2">
     <span className="font-semibold text-2xl lg:text-5xl cursor-pointer">Unisex</span>
-    <span className="md:hidden ml-2 bg-gray-900 py-1 px-2 rounded-full">
+    <span className="md:hidden py-1 rounded-full">
     <i className={`fa-solid fa-chevron-down transition  text-sm
       ${show.menu3 ? "rotate-180" : ""}`}/>
     </span>
@@ -155,7 +156,7 @@ ${nav?'translate-y-0':'-translate-y-full'}`}>
 <div className="">
   <button onClick={() => dropdown("menu4")} className="flex items-center gap-2">
     <span className="font-semibold text-2xl lg:text-5xl cursor-pointer">Sports</span>
-    <span className="md:hidden ml-2 bg-gray-900 py-1 px-2 rounded-full">
+    <span className="md:hidden py-1 rounded-full">
     <i className={`fa-solid fa-chevron-down transition  text-sm
       ${show.menu4 ? "rotate-180" : ""}`}/>
     </span>
@@ -188,8 +189,8 @@ ${nav?'translate-y-0':'-translate-y-full'}`}>
 
           <div className="hidden md:block flex flex-row space-x-4 px-4 text-xl">
 
-            <span className="cursor-pointer"><i className="fa-solid fa-heart"></i></span>
-            <span className="cursor-pointer"><i className="fa-solid fa-bag-shopping"></i></span>
+            <span title="Wishlist" className="cursor-pointer"><i className="fa-solid fa-heart"></i></span>
+            <span title="Cart" className="cursor-pointer"><i className="fa-solid fa-bag-shopping"></i></span>
             <span className="cursor-pointer"><i className="fa-solid fa-dolly"></i></span>
 
           </div>

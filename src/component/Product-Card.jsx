@@ -1,8 +1,8 @@
 export function ProductCard(){
     return(
-        <div className="cursor-pointer relative flex flex-col px-1 space-y-0.5 text-[12px] md:text-lg hover:shadow-2xs shadow-gray-500">
+        <div className="cursor-pointer relative flex flex-col px-1 space-y-0.5 text-[12px] md:text-lg hover:shadow-sm shadow-gray-500 overflow-hidden">
             <span className="z-10 absolute top-5 right-5 text-sm md:text-2xl hover:text-red-300"><i class="fa-regular fa-heart"></i></span>
-               <img src="images/men.webp" alt="" className="w-full rounded-xl hover:scale-105" /> 
+               <img src="images/men.webp" alt="" className="w-full h-72 rounded-xl hover:scale-105 duration-700" /> 
                <span className="font-semibold flex space-x-2 items-center">
                     <span>(4.5)</span>                      
                     <span className="flex flex-row text-yellow-500">

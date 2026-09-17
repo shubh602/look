@@ -62,6 +62,7 @@ export function Category() {
                     <span>Men</span>
                 </div>
 
+
             {/* child element */}
                 <div className="flex flex-col justify-center items-center space-y-3 cursor-pointer hover:text-white">
                     <img src="images/women.webp" className="rounded-full w-12 h-12 md:w-30 md:h-30" />

@@ -6,7 +6,7 @@ export function Footer(){
  const footerNav="w-fit border-b border-dotted border-black hover:border-white cursor-pointer"
 
     return(
-<div className="bg-black text-white">
+<div className="bg-black text-white border-t-2 border-white">
         
         <footer className="md:hidden fixed bottom-0 bg-black/60 py-2 px-5 w-full flex justify-between text-2xl">
             <span><i class="fa-solid fa-house"></i></span>

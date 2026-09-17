@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { HomePage } from "../pages/home/HomePage";
+import { Footer } from "../component/footer";
 
 
 export function MainRoutes(){
@@ -8,8 +9,15 @@ export function MainRoutes(){
     
         <Route 
             index
-            element={<HomePage />}
+            element={
+             <>   
+            <HomePage />
+            <Footer />
+            </>
+        }
         />
+
+        
             
     </Routes>
     )
